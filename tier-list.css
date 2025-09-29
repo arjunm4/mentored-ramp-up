@@ -1,0 +1,223 @@
+/* Tier List Specific Styles */
+.tier-list-container {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.tier-list-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    gap: 20px;
+}
+
+.back-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    color: #ffffff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.back-button:hover {
+    background: #2a2a2a;
+    border-color: #404040;
+    transform: translateX(-2px);
+}
+
+.album-title {
+    font-size: 36px;
+    font-weight: 300;
+    color: #ffffff;
+    letter-spacing: -0.02em;
+    margin: 0;
+}
+
+.tier-list-wrapper {
+    margin-bottom: 60px;
+}
+
+.tier-row {
+    display: flex;
+    margin-bottom: 8px;
+    min-height: 80px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #2a2a2a;
+}
+
+.tier-label {
+    width: 80px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    flex-shrink: 0;
+    padding-top: 20px;
+}
+
+.s-tier {
+    background: #dc2626;
+}
+
+.a-tier {
+    background: #ea580c;
+}
+
+.b-tier {
+    background: #d97706;
+}
+
+.c-tier {
+    background: #65a30d;
+}
+
+.d-tier {
+    background: #16a34a;
+}
+
+.f-tier {
+    background: #059669;
+}
+
+.tier-content {
+    flex: 1;
+    background: #1a1a1a;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 12px;
+    min-height: 80px;
+    transition: background-color 0.3s ease;
+}
+
+.tier-content.drag-over {
+    background: #2a2a2a;
+    border: 2px dashed #404040;
+}
+
+.track-item {
+    background: #2a2a2a;
+    border: 1px solid #404040;
+    color: #ffffff;
+    padding: 12px 16px;
+    border-radius: 6px;
+    cursor: grab;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    user-select: none;
+    white-space: nowrap;
+}
+
+.track-item:hover {
+    background: #404040;
+    border-color: #666666;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.track-item:active {
+    cursor: grabbing;
+    transform: scale(0.95);
+}
+
+.track-item.dragging {
+    opacity: 0.5;
+    transform: rotate(5deg);
+}
+
+.track-pool {
+    background: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.track-pool-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.track-pool-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .tier-list-container {
+        padding: 20px 15px;
+    }
+    
+    .tier-list-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .album-title {
+        font-size: 28px;
+    }
+    
+    .tier-label {
+        width: 60px;
+        font-size: 20px;
+    }
+    
+    .tier-content {
+        padding: 0 15px;
+        min-height: 70px;
+    }
+    
+    .track-item {
+        padding: 10px 14px;
+        font-size: 13px;
+    }
+    
+    .track-pool {
+        padding: 20px;
+    }
+    
+    .track-pool-title {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tier-label {
+        width: 50px;
+        font-size: 18px;
+    }
+    
+    .tier-content {
+        padding: 0 10px;
+        min-height: 60px;
+    }
+    
+    .track-item {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+    
+    .track-pool-content {
+        gap: 8px;
+    }
+}

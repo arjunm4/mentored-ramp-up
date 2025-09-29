@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tier List - Album Tracks</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tier-list.css">
+</head>
+<body>
+    <div class="tier-list-container">
+        <!-- Header with back button and album title -->
+        <div class="tier-list-header">
+            <button class="back-button" onclick="goBack()">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                Back
+            </button>
+            <h1 class="album-title" id="albumTitle">Album Tier List</h1>
+        </div>
+
+        <!-- Tier List Structure -->
+        <div class="tier-list-wrapper">
+            <div class="tier-row" data-tier="s">
+                <div class="tier-label s-tier">S</div>
+                <div class="tier-content" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </div>
+            
+            <div class="tier-row" data-tier="a">
+                <div class="tier-label a-tier">A</div>
+                <div class="tier-content" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </div>
+            
+            <div class="tier-row" data-tier="b">
+                <div class="tier-label b-tier">B</div>
+                <div class="tier-content" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </div>
+            
+            <div class="tier-row" data-tier="c">
+                <div class="tier-label c-tier">C</div>
+                <div class="tier-content" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </div>
+            
+            <div class="tier-row" data-tier="d">
+                <div class="tier-label d-tier">D</div>
+                <div class="tier-content" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </div>
+            
+            <div class="tier-row" data-tier="f">
+                <div class="tier-label f-tier">F</div>
+                <div class="tier-content" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </div>
+        </div>
+
+        <!-- Track Pool -->
+        <div class="track-pool">
+            <h3 class="track-pool-title">Drag tracks to rank them</h3>
+            <div class="track-pool-content" id="trackPool">
+                <!-- Tracks will be dynamically loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="tier-list.js"></script>
+</body>
+</html>
