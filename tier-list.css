@@ -9,8 +9,20 @@
 .tier-list-header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin-bottom: 40px;
     gap: 20px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
 }
 
 .back-button {
@@ -32,6 +44,55 @@
     background: #2a2a2a;
     border-color: #404040;
     transform: translateX(-2px);
+}
+
+.info-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    color: #ffffff;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 44px;
+    height: 44px;
+}
+
+.info-button:hover {
+    background: #2a2a2a;
+    border-color: #404040;
+    transform: scale(1.05);
+}
+
+.info-button svg {
+    width: 20px;
+    height: 20px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2.5;
+}
+
+.back-button svg {
+    width: 20px;
+    height: 20px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+}
+
+.close-button svg {
+    width: 20px;
+    height: 20px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+}
+
+.info-button svg circle:last-child {
+    fill: currentColor;
 }
 
 .album-title {
@@ -161,63 +222,83 @@
     justify-content: center;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .tier-list-container {
-        padding: 20px 15px;
-    }
-    
-    .tier-list-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 15px;
-    }
-    
-    .album-title {
-        font-size: 28px;
-    }
-    
-    .tier-label {
-        width: 60px;
-        font-size: 20px;
-    }
-    
-    .tier-content {
-        padding: 0 15px;
-        min-height: 70px;
-    }
-    
-    .track-item {
-        padding: 10px 14px;
-        font-size: 13px;
-    }
-    
-    .track-pool {
-        padding: 20px;
-    }
-    
-    .track-pool-title {
-        font-size: 18px;
-    }
+.thoughts-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
 }
 
-@media (max-width: 480px) {
-    .tier-label {
-        width: 50px;
-        font-size: 18px;
-    }
-    
-    .tier-content {
-        padding: 0 10px;
-        min-height: 60px;
-    }
-    
-    .track-item {
-        padding: 8px 12px;
-        font-size: 12px;
-    }
-    
-    .track-pool-content {
-        gap: 8px;
-    }
+.thoughts-modal.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    background: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    border-radius: 12px;
+    max-width: 600px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+
+.thoughts-modal.show .modal-content {
+    transform: scale(1);
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 24px 0;
+    border-bottom: 1px solid #2a2a2a;
+    margin-bottom: 20px;
+}
+
+.modal-header h2 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 0;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    color: #aaaaaa;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.close-button:hover {
+    background: #2a2a2a;
+    color: #ffffff;
+}
+
+.modal-body {
+    padding: 0 24px 24px;
+}
+
+.modal-body p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #cccccc;
+    margin: 0;
 }

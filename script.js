@@ -5,23 +5,35 @@ document.addEventListener('DOMContentLoaded', function() {
     
     let isScrolling = false;
     
-    // Click functionality for carousel items
+    // Clicking carousel items
     carouselItems.forEach((item, index) => {
         item.addEventListener('click', function(e) {
-            // Add click animation
+            // Animationnnnnn
             item.style.transform = 'scale(0.95)';
             setTimeout(() => {
                 item.style.transform = '';
             }, 150);
             
-            // Navigate to tier list page with album parameter
+            //Going to tier list page
             const imageAlt = item.querySelector('.carousel-image').alt;
             const albumName = imageAlt.toLowerCase().replace(/\s+/g, '_');
             window.location.href = `tier-list.html?album=${albumName}`;
         });
     });
     
-    // Smooth scroll to center items when they come into view
+    // Center carousel
+    function centerCarousel() {
+        const carousel = document.querySelector('.carousel');
+        const carouselWrapper = document.querySelector('.carousel-wrapper');
+        const carouselWidth = carousel.scrollWidth;
+        const wrapperWidth = carouselWrapper.clientWidth;
+        const scrollPosition = (carouselWidth - wrapperWidth) / 2;
+        
+        carouselWrapper.scrollLeft = scrollPosition;
+    }
+    centerCarousel();
+    
+    // Smooth scroll 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
