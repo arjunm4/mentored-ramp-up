@@ -38,14 +38,13 @@ const albumData = {
             "Must Be Love",
             "While You Were Sleeping",
             "Lovesick",
-            "Valentine",
-            "Like the Movies",
-            "Misty",
-            "Let You Break My Heart Again",
-            "I Wish You Love",
             "California and Me",
+            "Promise",
             "From the Start",
-            "Letter to My 13 Year Old Self"
+            "Misty",
+            "Serendipity",
+            "Letter to My 13 Year Old Self",
+            "Bewitched"
         ]
     },
     born_to_die: {
@@ -97,7 +96,7 @@ const albumData = {
             "Get Along Better",
             "You Only Live Twice",
             "IMY2",
-            "Love You Better",
+            "F*****g Fans",
             "The Remorse"
         ]
     },
@@ -181,15 +180,15 @@ const albumData = {
         trackCount: 10,
         thoughts: "Daniel Ceaser has one of the best voices I've ever heard, and he allows it to go on full display in Freudian. There is no way to describe the music on this album other than beautiful. It is so full of love and passion that it takes a genuine effort not to end a full listen of this project in tears. Production is also incredible. Some of my favorite tracks are Loose, Hold Me Down, and We Find Love. 9/10.",
         tracks: [
-            "Get You (Ft. Kali Uchis)",
-            "Best Part (Ft. H.E.R.)",
+            "Get You",
+            "Best Part",
             "Hold Me Down",
             "Neu Roses (Transgressor's Song)",
             "Loose",
             "We Find Love",
             "Blessed",
-            "Take Me Away (Ft. Syd)",
-            "Transform (Ft. Charlotte Day Wilson)",
+            "Take Me Away",
+            "Transform",
             "Freudian"
         ]
     },
@@ -199,7 +198,7 @@ const albumData = {
         year: "2007",
         genre: "Hip-Hop",
         trackCount: 15,
-        thoughts: "He made Graduation... No but seriously despite all the terrible things Kanye has said since Graduation, it is truly a priveledge to listen to all his music. He is, without a doubt, a genius when it comes to music and has such a good sense of what makes good music great. Really breaking down Kanye songs is almost like English class, where you ask yourself 'Was the author really thinking allat?' But in the case of Kanye, I can assure you he was thinking allat. Favorite songs are Big Brother, I Wonder, and Can't Tell Me Nothing. 10/10",
+        thoughts: "He made Graduation... No but seriously despite all the terrible things Kanye has said since Graduation, it is truly a privelege to listen to all his music. He is a musical genius and has such a good sense of what transcends good music into greatness. Really breaking down Kanye songs is almost like English class, where you ask yourself 'Was the author really thinking allat?' But in the case of Kanye, I can assure you he was thinking allat. Favorite songs are Big Brother, I Wonder, and Can't Tell Me Nothing. 10/10",
         tracks: [
             "Good Morning",
             "Champion",
@@ -244,7 +243,7 @@ const albumData = {
         year: "2007",
         genre: "Alternative Rock",
         trackCount: 10,
-        thoughts: "Masterpiece. Not much can be said about this album that hasn't been said before. My favorite Radiohead album (Sorry OK Computer!) and is the best evidence for why Radiohead is one of the best bands of all time. Favorite song on the album (and my favorite Radiohead song) is Weird Fishes/Arpeggi. 10/10.",
+        thoughts: "Masterpiece. Not much can be said about this album that hasn't been said before. My favorite Radiohead album (Sorry OK Computer!) and is great evidence for why Radiohead is one of the best bands of all time. Favorite song on the album (and my favorite Radiohead song) is Weird Fishes/Arpeggi. 10/10.",
         title: "In Rainbows",
         tracks: [
             "15 Step",
