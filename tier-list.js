@@ -198,7 +198,7 @@ const albumData = {
         year: "2007",
         genre: "Hip-Hop",
         trackCount: 15,
-        thoughts: "He made Graduation... No but seriously despite all the terrible things Kanye has said since Graduation, it is truly a privelege to listen to all his music. He is a musical genius and has such a good sense of what transcends good music into greatness. Really breaking down Kanye songs is almost like English class, where you ask yourself 'Was the author really thinking allat?' But in the case of Kanye, I can assure you he was thinking allat. Favorite songs are Big Brother, I Wonder, and Can't Tell Me Nothing. 10/10",
+        thoughts: "He made Graduation... No but seriously despite all the terrible things Kanye has said since Graduation, it is truly a privilege to listen to all his music. He is a musical genius and has such a good sense of what transcends good music into greatness. Really breaking down Kanye songs is almost like English class, where you ask yourself 'Was the author really thinking allat?' But in the case of Kanye, I can assure you he was thinking allat. Favorite songs are Big Brother, I Wonder, and Can't Tell Me Nothing. 10/10",
         tracks: [
             "Good Morning",
             "Champion",
